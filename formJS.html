@@ -1,0 +1,49 @@
+<html>
+    <head><title>Javascript Forms</title></head>
+    <body>
+        <style>
+        form{
+            width: 25%;
+        }
+        label{
+            padding: 20px;
+            float: left;
+        }
+        input{
+            float: left;
+            margin: 20px;
+        }
+        </style>
+        <div class="addFrom">
+            <button class="btnFrom">Add Form</button>
+        </div>
+        <div class="form" style="display: none">
+            <form>
+                <label>FirstName</label><input name="Fname" type="text"><br>
+                <label>LastName</label><input name="Lname" type="text"><br>
+                <label>Age Size</label><input name="age" type="text"><br>
+                <label><input type="radio" name="male" value="M"> Male Person</label>
+                <label><input type="radio" name="female" value="F"> Female Person</label>
+                <div id="checkboxes">
+                <label for="one">
+                    <input type="checkbox" id="one" />First</label>
+                <label for="two">
+                    <input type="checkbox" id="two" />Second</label>
+                <label for="three">
+                    <input type="checkbox" id="three" />Third</label>
+                </div>
+                <label>Location</label><input name="location" type="text"><br>
+                <button id="submitBtn">Submit JSForm</button>
+            </form>
+        </div>
+    </body>
+    <script>
+    document.getElementsByClassName("btnFrom")[0].addEventListener("click", () => {
+        document.getElementsByClassName("form")[0].style.display ="block";
+        document.getElementsByClassName("btnFrom")[0].style.display ="none";
+    });
+    document.getElementByClassId("submitBtn").addEventListener('click', ()=> {
+        
+    });
+    </script>
+</html>
