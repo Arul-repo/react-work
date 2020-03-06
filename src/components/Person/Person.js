@@ -1,6 +1,6 @@
 import React, {Component /* Fragment */} from "react";
 import "./Person.css";
-import Aux from "../../hoc/Aux";
+import Aux from "../../hoc/Auxiiliary";
 import AuthContext from "../../context/authContext";
 
 class Persons extends Component{
